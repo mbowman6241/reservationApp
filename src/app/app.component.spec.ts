@@ -1,16 +1,24 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { MatIconModule, MatToolbarModule, MatNativeDateModule } from '@angular/material';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        MatIconModule,
+        MatToolbarModule,
+        MatNativeDateModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        SideNavComponent
       ],
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
     }).compileComponents();
   }));
 
@@ -30,6 +38,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to restaurant-res!');
+    expect(compiled.querySelector('h1').textContent).toContain('Reservation App');
   });
 });
