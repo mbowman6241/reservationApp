@@ -1,0 +1,63 @@
+[
+    {
+        "tableLocation": "table 1",
+        "tableSize": 2,
+        "type": "booth"
+    },
+    {
+        "tableLocation": "table 2",
+        "tableSize": 2,
+        "type": "booth"
+    },
+    {
+        "tableLocation": "table 3",
+        "tableSize": 2,
+        "type": "booth"
+    },
+    {
+        "tableLocation": "table 4",
+        "tableSize": 2,
+        "type": "booth"
+    },
+    {
+        "tableLocation": "table 5",
+        "tableSize": 2,
+        "type": "table"
+    },
+    {
+        "tableLocation": "table 6",
+        "tableSize": 2,
+        "type": "table"
+    },
+    {
+        "tableLocation": "table 7",
+        "tableSize": 2,
+        "type": "table"
+    },
+    {
+        "tableLocation": "table 8",
+        "tableSize": 4,
+        "type": "booth"
+    },
+    {
+        "tableLocation": "table 9",
+        "tableSize": 4,
+        "type": "table"
+    },
+    {
+        "tableLocation": "table 10",
+        "tableSize": 6,
+        "type": "booth"
+    },
+    {
+        "tableLocation": "table 11",
+        "tableSize": 6,
+        "type": "table"
+    },
+    {
+        "tableLocation": "table 12",
+        "tableSize": 6,
+        "type": "booth"
+    }
+    
+]

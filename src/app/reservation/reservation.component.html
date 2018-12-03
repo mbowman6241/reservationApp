@@ -1,0 +1,37 @@
+<mat-card class="resCard">
+  <mat-card-header>
+    <mat-card-title fxLayout="column"  fxLayoutAlign="center">Make a Reservation</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form fxLayout="column" class="resForm" (ngSubmit)="addReservation()" [formGroup]="addResForm" method="post">
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="date" required>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Time" type="time" formControlName="time">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Party Name" type="text" formControlName="name" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="# of People" type="number" formControlName="numPeople" min="0" required>
+        <mat-hint align="end">Numbers Only</mat-hint>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-select placeholder="Pick A Table" formControlName="table" required>
+          <mat-option *ngFor="let table of tables" [value]="table.tableLocation" ngDefaultControl>
+            {{table.tableLocation}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit" [disabled]="!addResForm.valid">Submit</button>
+    </form>
+  </mat-card-content>
+</mat-card>

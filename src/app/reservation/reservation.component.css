@@ -1,0 +1,10 @@
+.resForm {
+    max-width: 100%;
+}
+
+.resCard {
+    position: absolute;
+    max-width: 400px;
+    margin-left: 50px;
+    margin-top: 15px;
+  }
