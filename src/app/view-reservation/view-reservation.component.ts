@@ -26,7 +26,6 @@ export class ViewReservationComponent implements OnInit {
       this.reservations = [];
     }
     this.dataSource.data = this.reservations;
-    console.log('dataSource', this.dataSource.data);
     this.dataSource.sort = this.sort;
 
     this.filledResy = this.resService.viewFilledReservations();
@@ -34,7 +33,6 @@ export class ViewReservationComponent implements OnInit {
       this.filledResy = [];
     }
     this.filledResDataSource.data = this.filledResy;
-    console.log('filled', this.filledResDataSource.data);
     this.filledResDataSource.sort = this.sortFill;
   }
 
